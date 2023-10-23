@@ -33,12 +33,31 @@
 
 #region task2
 
-int number = int.Parse(Console.ReadLine());
+//int number = int.Parse(Console.ReadLine());
 
-string result = number switch
+//string result = number switch
+//{
+//    _ when number > 99 && number < 1000 => ""+number + number,
+//    _ => "3 reqemli eded daxil edilmelidir"
+//};
+//Console.WriteLine(result);
+#endregion
+
+#region task3
+int number = int.Parse(Console.ReadLine());
+int result = number switch
 {
-    _ when number > 99 && number < 1000 => ""+number + number,
-    _ => "3 reqemli eded daxil edilmelidir"
+    _ when number>9999&&number<100000 => (number*18)/100,
+    _=>0
 };
-Console.WriteLine(result);
+if (result==0)
+{
+    Console.WriteLine("5 reqemli eded daxil edin");
+}
+else
+{
+    Console.WriteLine(result);
+    result = (result * 3) / 100;
+    Console.WriteLine(result);
+}
 #endregion
