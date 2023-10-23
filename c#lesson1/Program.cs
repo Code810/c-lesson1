@@ -63,16 +63,28 @@
 #endregion
 
 #region task4
-using System.Diagnostics.CodeAnalysis;
+//using System.Diagnostics.CodeAnalysis;
 
+//int number=int.Parse(Console.ReadLine());
+//string result = number switch
+//{ 
+//  _ when number>99&&number<1000 => number+"7",
+//  _=>"3 reqemli eded daxil edin"
+//};
+//float count = int.Parse(result);
+//count = (count * 7) / 100;
+//Console.Write("cavab:");
+//Console.WriteLine(count);
+#endregion
+
+#region task5
 int number=int.Parse(Console.ReadLine());
 string result = number switch
 { 
-  _ when number>99&&number<1000 => number+"7",
-  _=>"3 reqemli eded daxil edin"
+    _ when number>999 && number<10000 =>"4"+number+"44",
+    _=>"4 reqemli eded daxil edin "
 };
 float count = int.Parse(result);
-count = (count * 7) / 100;
-Console.Write("cavab:");
+count=(count*44)/ 100;
 Console.WriteLine(count);
 #endregion
