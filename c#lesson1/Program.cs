@@ -1,4 +1,5 @@
-﻿#region task1 metod1
+﻿
+#region task1 metod1
 
 //int number=int.Parse(Console.ReadLine());
 //while(number>0)
@@ -78,13 +79,35 @@
 #endregion
 
 #region task5
-int number=int.Parse(Console.ReadLine());
-string result = number switch
-{ 
-    _ when number>999 && number<10000 =>"4"+number+"44",
-    _=>"4 reqemli eded daxil edin "
+//int number=int.Parse(Console.ReadLine());
+//string result = number switch
+//{ 
+//    _ when number>999 && number<10000 =>"4"+number+"44",
+//    _=>"4 reqemli eded daxil edin "
+//};
+//float count = int.Parse(result);
+//count=(count*44)/ 100;
+//Console.WriteLine(count);
+#endregion
+
+#region task6
+Console.Write("ededi daxil edin: ");
+int number = int.Parse(Console.ReadLine());
+float result = number switch
+{
+    _ when number > 999 && number < 10000 => (number*20)/100,
+    _ => 0
 };
-float count = int.Parse(result);
-count=(count*44)/ 100;
-Console.WriteLine(count);
+if (result == 0 )
+{
+    Console.WriteLine("4 reqemli eded daxil edin");
+}
+else
+{
+     result = (result * 10 )/ 100;
+   float count = result * result;
+    Console.Write("cavab:");
+    Console.WriteLine(count);
+}
+
 #endregion
