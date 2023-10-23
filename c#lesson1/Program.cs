@@ -21,12 +21,24 @@
 #region task1 metod2
 
 
+//int number = int.Parse(Console.ReadLine());
+
+//string result = number switch
+//{
+//        _ when number > 999 && number < 10000 => "7" + number + "8",
+//        _ => "4 reqemli eded daxil edilmelidir"
+//};
+//Console.WriteLine(result);
+#endregion
+
+#region task2
+
 int number = int.Parse(Console.ReadLine());
 
 string result = number switch
 {
-        _ when number > 999 && number < 10000 => "7" + number + "8",
-        _ => "4 reqemli eded daxil edilmelidir"
+    _ when number > 99 && number < 1000 => ""+number + number,
+    _ => "3 reqemli eded daxil edilmelidir"
 };
 Console.WriteLine(result);
 #endregion
