@@ -1,48 +1,66 @@
 ﻿
 
-#region task1 metod1
 
-//int number=int.Parse(Console.ReadLine());
-//while(number>0)
-//if (number > 999 && number < 10000) 
-//{
-//    Console.Write("7");
-//    Console.Write(number);
-//    Console.WriteLine("8");
+
+
+
+
+#region task1 metod1
+//Console.Write("Ededi daxil edin:");
+//int number = int.Parse(Console.ReadLine());
+//while (true)
+//    if (number > 999 && number < 10000)
+//    {
+//        Console.Write("7");
+//        Console.Write(number);
+//        Console.WriteLine("8");
 //        break;
-//}
-//else 
-//{
+//    }
+//    else
+//    {
 //        Console.WriteLine("Yalniz 4 reqemli eded daxil ede bilersiniz");
 //        number = int.Parse(Console.ReadLine());
 
-//}
+//    }
 
 #endregion
 
 #region task1 metod2
 
+//using System.Reflection.Metadata.Ecma335;
 
+//Console.Write("ededi daxil edin:");
 //int number = int.Parse(Console.ReadLine());
-
+//while (number < 999 || number > 10000)
+//{
+//    Console.WriteLine("4 reqemli eded daxil edin");
+//    number=int.Parse(Console.ReadLine());
+//}
 //string result = number switch
 //{
-//        _ when number > 999 && number < 10000 => "7" + number + "8",
-//        _ => "4 reqemli eded daxil edilmelidir"
-//};
+//    _ when number > 999 && number < 10000 => "7" + number + "8"
+
+//}; 
+
+
 //Console.WriteLine(result);
 #endregion
 
 #region task2
 
-//int number = int.Parse(Console.ReadLine());
-
-//string result = number switch
-//{
-//    _ when number > 99 && number < 1000 => ""+number + number,
-//    _ => "3 reqemli eded daxil edilmelidir"
-//};
-//Console.WriteLine(result);
+Console.WriteLine("ededi daxil edin:");
+int number = int.Parse(Console.ReadLine());
+while (number < 99 || number > 1000)
+{
+    Console.WriteLine("3 reqemli eded daxil edin:");
+    number=int.Parse(Console.ReadLine());
+}
+string result = number switch
+{
+    _ when number > 99 && number < 1000 => "" + number + number
+    
+};
+Console.WriteLine(result);
 #endregion
 
 #region task3
@@ -114,17 +132,20 @@
 #endregion
 
 #region task7
-Console.WriteLine("Ededleri daxil edin:");
-int num1=int.Parse(Console.ReadLine());
-Console.WriteLine(" | ");
-int num2=int.Parse(Console.ReadLine());
+//Console.WriteLine("Ededleri daxil edin:");
+//int num1=int.Parse(Console.ReadLine());
+//int num2=int.Parse(Console.ReadLine());
 
-int sum=num1 + num2;
+//int sum=num1 + num2;
 
-float result = int.Parse("5" + sum + "5");
+//int result = int.Parse("5" + sum + "5");
 
-result = result * 5 / 100;
+//result = result * 5 / 100;
 
-Console.WriteLine(result);
+//Console.WriteLine(result);
+#endregion
+
+#region task3 new
+
 
 #endregion
